@@ -1,0 +1,12 @@
+.navBar-container {
+    width: 85%;
+    height: 15vh;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+}
+
+.logo {
+    width: 100px;
+}
