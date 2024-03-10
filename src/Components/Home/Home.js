@@ -6,12 +6,10 @@ import { connect } from "react-redux";
 import NavBar from "../NavBar/NavBar";
 
 /* Helpers and Actions */
-import checkFunction from "../../Actions/checkAction";
+
 
 class Home extends React.Component {
     render() {
-        const { checkFunction, check } = this.props;
-        console.log(check, "checkcheckcheckcheck")
         return (
             <div>
                 <NavBar />
@@ -24,8 +22,6 @@ const mapState = state => ({
     check: state
 });
 
-const mapDispatch = {
-    checkFunction
-};
+const mapDispatch = {};
 
 export default (connect(mapState, mapDispatch)(Home));

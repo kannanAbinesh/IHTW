@@ -10,3 +10,14 @@
 .logo {
     width: 100px;
 }
+
+.navBar-content {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+.category-container {
+    width: 100%;
+    height: 7vh;
+}

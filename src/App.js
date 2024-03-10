@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* Components */
 import Home from './Components/Home/Home';
+import NotFound from "./Components/NotFound/NotFound";
 
 /* Helpers and Functions */
 import store from "./Reducers";
@@ -18,6 +19,7 @@ function App() {
       <Provider store={store}>
         <BrowserRouter> 
             <Routes>
+              <Route path="*" Component={NotFound} />
               <Route path="/" Component={Home}/>
             </Routes>
           </BrowserRouter>
