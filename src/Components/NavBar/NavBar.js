@@ -26,10 +26,10 @@ class NavBar extends React.Component {
         const { openLanguageModal } = this.props;
 
         return (
-            <div>
+            <div className="navBar-main-container">
                 <LanguageModal />
                 <div className="navBar-container">
-                    <img src={logo} className="logo" alt="logo" />
+                    <img src={logo} className="logo" alt="logo" onClick={() => window.location.href = '/'}/>
                     <SearchBar />
                     <div className="navBar-content">
                         <AiOutlineGlobal size={30} onClick={() => openLanguageModal()}/>
