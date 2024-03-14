@@ -1,0 +1,27 @@
+.chatbox-container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 3%;
+    right: 1%;
+}
+
+.chatbox-opener {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(109, 106, 106, 0.4);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.contact-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}

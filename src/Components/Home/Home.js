@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import NavBar from "../NavBar/NavBar";
 import HomeBanner from "../HomeBanner/HomeBanner";
 import Services from "../Services/Services";
+import Social from "../Social/Social";
 
 /* Helpers and Actions */
 
@@ -17,6 +18,7 @@ class Home extends React.Component {
                 <NavBar />
                 <HomeBanner />
                 <Services />
+                <Social />
             </div>
         )
     }
