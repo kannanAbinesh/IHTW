@@ -10,6 +10,8 @@
     align-items: center;
     color: #ffffff;
     font-weight: 700;
+    background-attachment: fixed;
+    background-position: 75%;
 }
 
 .banner-header {
