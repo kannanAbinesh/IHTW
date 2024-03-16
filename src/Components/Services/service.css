@@ -81,6 +81,10 @@
     }
 
     .service_subContainer {
-        padding: 10px 10px 10px 15px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .service_container {
+        width: 95%;
     }
 }
