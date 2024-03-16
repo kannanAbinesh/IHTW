@@ -15,7 +15,7 @@ class HomeBanner extends React.Component {
                 <div>
                     <h1 className="banner-header">Rise Above the Rest</h1>
                     <p className="banner-subheader">Experience Faster Internet</p>
-                    <div className="home-banner-icon-container" onClick={() => window.location.href = '#scroll_view'}>
+                    <div className="home-banner-icon-container" onClick={() => window.location.href = '#serviceContainer'}>
                         <MdKeyboardArrowDown size={50} className="home-banner-icon"/>
                     </div>
                 </div>
