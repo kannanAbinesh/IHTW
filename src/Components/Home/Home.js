@@ -18,7 +18,7 @@ class Home extends React.Component {
                 <NavBar />
                 <HomeBanner />
                 <Services />
-                <Social />
+                {/* <Social /> */}
             </div>
         )
     }

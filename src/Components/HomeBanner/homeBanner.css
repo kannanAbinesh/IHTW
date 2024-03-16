@@ -5,7 +5,7 @@
     background-size: cover;
     display: flex;
     flex-direction: row;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     color: #ffffff;
@@ -54,5 +54,15 @@
     }
     to {
       transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner-header {
+        font-size: 2.5rem;
+    }
+
+    .banner-subheader {
+        font-size: 1.5rem;
     }
 }
