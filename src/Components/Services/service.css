@@ -26,11 +26,6 @@
     min-width: 200px;
 }
 
-.service_btn:focus, .service_btn:hover {
-    box-shadow: #ec0b43 !important;
-    background-color: #ec0b43 !important;
-}
-
 .background_container {
     position: relative;
     padding: 30px;

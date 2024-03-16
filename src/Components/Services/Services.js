@@ -24,7 +24,7 @@ class Services extends React.Component {
                                             {i?.icon}
                                             <h3 className="service_container_header">{i?.headers}</h3>
                                             <p className="service_container_data">{i?.data}</p>
-                                            <Button className="service_btn">{i?.buttonData}</Button>
+                                            <Button variant="danger" className="service_btn">{i?.buttonData}</Button>
                                         </div>
                                     </div>
                                 </Col>
