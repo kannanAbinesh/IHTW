@@ -7,6 +7,7 @@ import NavBar from "../NavBar/NavBar";
 import HomeBanner from "../HomeBanner/HomeBanner";
 import Services from "../Services/Services";
 import Social from "../Social/Social";
+import Footer from "../Footer/Footer";
 
 /* Helpers and Actions */
 
@@ -15,10 +16,11 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <NavBar />
-                <HomeBanner />
+                {/* <NavBar /> */}
+                {/* <HomeBanner /> */}
                 <Services />
                 {/* <Social /> */}
+                {/* <Footer /> */}
             </div>
         )
     }

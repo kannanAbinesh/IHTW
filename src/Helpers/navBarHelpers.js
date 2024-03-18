@@ -1,14 +1,18 @@
-export const navBarContent = [
+export const navBarDetails = [
     {
         id: 1,
-        name: 'Residential'
+        name: 'Home'
     },
     {
         id: 2,
-        name: 'Business Services'
+        name: 'About us'
     },
     {
         id: 3,
-        name: 'Get in touch'
+        name: 'Contact'
+    },
+    {
+        id: 4,
+        name: 'Projects'
     }
 ];

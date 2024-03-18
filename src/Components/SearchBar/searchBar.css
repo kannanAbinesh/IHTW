@@ -1,5 +1,5 @@
 .searchBar {
-    height: 50px;
+    height: auto;
     border: 1px solid black;
     border-radius: 26px;
     text-align: center;

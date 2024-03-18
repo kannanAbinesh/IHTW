@@ -1,18 +1,19 @@
 /* Plugins */
 import React from "react";
 import { connect } from "react-redux";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { CiShoppingCart } from "react-icons/ci";
-import { CgProfile } from "react-icons/cg";
-import { CgMenuMotion } from "react-icons/cg";
+import { MdCancel } from "react-icons/md";
 
 /* Components */
-import SearchBar from "../SearchBar/SearchBar";
 import LanguageModal from "../LanguageModal/LanguageModal";
+import SearchBar from '../SearchBar/SearchBar';
+import SideBar from "../SideBar/SideBar";
 
 /* Actions and Helpers */
 import { openLanguageModal } from "../../Actions/languageModalAction";
-import { navBarContent } from "../../Helpers/navBarHelpers";
+import { navBarDetails } from "../../Helpers/navBarHelpers";
+import { openSideBar } from "../../Actions/SideBarAction";
 
 /* Images */
 import logo from '../../Images/logo.png';
@@ -22,31 +23,38 @@ import './navBar.css';
 
 class NavBar extends React.Component {
 
+    constructor() {
+        super();
+        
+    };
+
+    handleChange = () => {
+        const { openSideBar } = this.props;
+        openSideBar();
+    }
+
     render() {
         const { openLanguageModal } = this.props;
-
         return (
-            <div className="navBar-main-container">
+            <div className="navBar_container">
                 <LanguageModal />
-                <div className="navBar-container">
-                    <img src={logo} className="logo" alt="logo" onClick={() => window.location.href = '/'}/>
-                    <SearchBar />
-                    <div className="navBar-content">
-                        <AiOutlineGlobal size={30} onClick={() => openLanguageModal()}/>
-                        <CiShoppingCart size={30} />
-                        <CgProfile size={30} />
+                <SideBar />
+                <div className="navBar_main_container">
+                    <a href="/" className="navBar_logo_container">
+                        <img src={logo} alt="logo" className="navBar_logo"/>
+                    </a>
+                    <div className="nav_container_data">
+                        {
+                            navBarDetails?.map((i) => (
+                                <label onClick={() => window.location.replace('/')}>{i?.name}</label>
+                            ))
+                        }
                     </div>
-                </div>
-                <div className="category-container">
-                    <div className="main-category-container">
-                        <CgMenuMotion size={30} className="category-logo"/>
-                        <p className="categories-span">Categories</p>
+                    <div className="navBar_account_container">
+                        <AiOutlineGlobal size={30} className="language_icons"/>
+                        <SearchBar />
                     </div>
-                    {
-                        navBarContent?.map( i =>(
-                            <p className="category-side-content" key={i?.id}>{i?.name}</p>
-                        ))
-                    }
+                    <GiHamburgerMenu size={30} className="mobileView" onClick={() => this.handleChange()}/>
                 </div>
             </div>
         )
@@ -56,7 +64,8 @@ class NavBar extends React.Component {
 const mapState = () => ({});
 
 const mapDispatch = {
-    openLanguageModal
+    openLanguageModal,
+    openSideBar
 };
 
 export default (connect(mapState, mapDispatch)(NavBar));
