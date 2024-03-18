@@ -8,6 +8,13 @@
     max-width: 1274px;
 }
 
+.service_main_container_two {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1274px;
+    padding-top: 70px;
+}
+
 .service_header_container {
     padding: 70px 0 0 70px;
 }
@@ -72,4 +79,12 @@
     margin-top: 10px;
     width: 75%;
     line-height: 1.5rem;
+    font-size: 17px;
+}
+
+.service_btn {
+    text-transform: capitalize;
+    margin-top: 15px;
+    width: 150px;
+    font-size: 1rem;
 }

@@ -3,7 +3,7 @@ import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 /* Images */
-import homeBannerOne from '../../Images/homeBannerOne.jpg';
+import mainBannerImage from '../../Images/mainBannerImage.jpg';
 
 /* Style */
 import './homeBanner.css';
@@ -11,7 +11,19 @@ import './homeBanner.css';
 class HomeBanner extends React.Component {
     render() {
         return(
-            <div className="homeBanner-container" style={{backgroundImage: `url(${homeBannerOne})`}}>
+            <div className="home_banner_container">
+                <div className="home_banner_inner_container" style={{backgroundImage: `url(${mainBannerImage})`}}>
+
+                </div>
+            </div>
+        )
+    }
+};
+
+export default HomeBanner;
+
+/* 
+<div className="homeBanner-container" style={{backgroundImage: `url(${homeBannerOne})`}}>
                 <div>
                     <h1 className="banner-header">Rise Above the Rest</h1>
                     <p className="banner-subheader">Experience Faster Internet</p>
@@ -20,8 +32,4 @@ class HomeBanner extends React.Component {
                     </div>
                 </div>
             </div>
-        )
-    }
-};
-
-export default HomeBanner;
+*/

@@ -1,4 +1,4 @@
-.homeBanner-container {
+/* .homeBanner-container {
     height: 70vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -65,4 +65,15 @@
     .banner-subheader {
         font-size: 1.5rem;
     }
+} */
+
+.home_banner_container {
+    height: 70vh !important;
+}
+
+.home_banner_inner_container {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

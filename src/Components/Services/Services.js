@@ -13,7 +13,7 @@ class Services extends React.Component {
         return (
             <div className="services_container">
                 <div className="service_main_container">
-                    <div className="service_main_container">
+                    <div className="service_main_container_two">
                         <div className="services_container">
                             <div className="service_header">What type of service are you looking for?</div>
                             <div className="service_subHeader">Are you looking for internet for your Home or Business?</div>
@@ -28,6 +28,7 @@ class Services extends React.Component {
                                                     {i?.icon}
                                                     <div className="service_inner_header">{i?.headers}</div>
                                                     <div className="service_inner_data">{i?.data}</div>
+                                                    <Button variant="danger" className="service_btn">{i?.buttonData}</Button>
                                                 </div>
                                             </div>
                                         </Col>
