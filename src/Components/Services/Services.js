@@ -16,7 +16,7 @@ class Services extends React.Component {
             <div className="services_container">
                 <div className="service_main_container">
                     <div className="service_main_container_two">
-                        <div className="services_container">
+                        <div className="services_header_container">
                             <div className="service_header">What type of service are you looking for?</div>
                             <div className="service_subHeader">Are you looking for internet for your Home or Business?</div>
                         </div>
@@ -46,10 +46,10 @@ class Services extends React.Component {
                                     slidesPerView={2}
                                     modules={[Autoplay]}
                                     spaceBetween={30}
-                                    // autoplay={{
-                                    //     delay: 2500,
-                                    //     disableOnInteraction: false
-                                    // }}
+                                    autoplay={{
+                                        delay: 2500,
+                                        disableOnInteraction: false
+                                    }}
                                 >
                                     {
                                         serviceHelpers?.map((i, index) => (

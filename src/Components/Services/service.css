@@ -3,6 +3,10 @@
     text-align: left;
 }
 
+.services_header_container {
+    margin-left: 10px;
+}
+
 .service_main_container {
     width: 100%;
     margin: 0 auto;
@@ -22,11 +26,11 @@
 
 .service_header {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .service_subHeader {
-    font-size: 16px;
+    font-size: 1rem;
     margin-top: 10px;
 }
 
