@@ -47,7 +47,7 @@ class Services extends React.Component {
                                     modules={[Autoplay]}
                                     spaceBetween={30}
                                     autoplay={{
-                                        delay: 2500,
+                                        delay: 4000,
                                         disableOnInteraction: false
                                     }}
                                     loop={true}
