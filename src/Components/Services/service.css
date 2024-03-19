@@ -120,4 +120,8 @@
     .service_inner_data {
         width: 100%;
     }
+
+    .services_header_container {
+        text-align: center;
+    }
 }

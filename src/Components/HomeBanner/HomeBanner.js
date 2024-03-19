@@ -1,9 +1,8 @@
 /* Plugins */
 import React from "react";
-import { MdKeyboardArrowDown } from "react-icons/md";
 
 /* Images */
-import mainBannerImage from '../../Images/mainBannerImage.jpg';
+import homeBanner from '../../Images/HomeBanner.jpg';
 
 /* Style */
 import './homeBanner.css';
@@ -12,7 +11,7 @@ class HomeBanner extends React.Component {
     render() {
         return(
             <div className="home_banner_container">
-                <div className="home_banner_inner_container" style={{backgroundImage: `url(${mainBannerImage})`}}>
+                <div className="home_banner_inner_container" style={{backgroundImage: `url(${homeBanner})`}}>
 
                 </div>
             </div>

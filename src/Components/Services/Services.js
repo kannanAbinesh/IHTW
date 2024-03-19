@@ -50,6 +50,7 @@ class Services extends React.Component {
                                         delay: 2500,
                                         disableOnInteraction: false
                                     }}
+                                    loop={true}
                                 >
                                     {
                                         serviceHelpers?.map((i, index) => (
