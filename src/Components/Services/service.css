@@ -1,5 +1,6 @@
 .services_container {
     box-sizing: border-box;
+    text-align: left;
 }
 
 .service_main_container {
@@ -31,7 +32,7 @@
 
 .service_content {
     color: #ffffff;
-    margin-top: 48px;
+    margin: 48px 10px 0 10px;
     text-align: justify;
 }
 
@@ -64,7 +65,8 @@
 .service_subcontent_container {
     position: absolute;
     padding: 0 20px 0 20px;
-    top: 20px;
+    top: 50px;
+    left: 20px;
 }
 
 .service_inner_header {
@@ -73,6 +75,16 @@
     margin: 10px 0 2px 0;
     font-weight: bold;
     text-transform: capitalize;
+    position: relative;
+}
+.service_inner_header::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background: #ec0b43;
+    left: 0;
+    top: 30px;
 }
 
 .service_inner_data {
@@ -80,6 +92,9 @@
     width: 75%;
     line-height: 1.5rem;
     font-size: 17px;
+    max-height: 250px;
+    overflow-x: hidden;
+    padding-right: 10px;
 }
 
 .service_btn {
@@ -87,4 +102,18 @@
     margin-top: 15px;
     width: 150px;
     font-size: 1rem;
+}
+
+.service_swiper {
+    width: 100%;
+    height: 500px;
+    color: #ffffff;
+    margin-top: 48px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1024px) {
+    .service_inner_data {
+        width: 100%;
+    }
 }

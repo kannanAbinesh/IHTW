@@ -2,6 +2,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 /* Components */
 import Home from './Components/Home/Home';
