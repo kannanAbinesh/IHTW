@@ -1,5 +1,6 @@
 /* Plugins */
 import React from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 /* Components */
 import NavBar from "../NavBar/NavBar";
@@ -22,6 +23,9 @@ class HomeBanner extends React.Component {
                         <h1 className="home_banner_header">Rise Above the Rest.</h1>
                         <label className="home_banner_content">Experience Faster Internet.</label>
                     </div>
+                    <div className="arrow_container">
+                        <MdKeyboardArrowDown size={50} onClick={() => window.location.href='#services_container'}/>
+                    </div>
                 </div>
             </div>
         )
@@ -29,15 +33,3 @@ class HomeBanner extends React.Component {
 };
 
 export default HomeBanner;
-
-/* 
-<div className="homeBanner-container" style={{backgroundImage: `url(${homeBannerOne})`}}>
-                <div>
-                    <h1 className="banner-header">Rise Above the Rest</h1>
-                    <p className="banner-subheader">Experience Faster Internet</p>
-                    <div className="home-banner-icon-container" onClick={() => window.location.href = '#serviceContainer'}>
-                        <MdKeyboardArrowDown size={50} className="home-banner-icon"/>
-                    </div>
-                </div>
-            </div>
-*/

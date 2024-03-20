@@ -1,81 +1,3 @@
-/* .navBar_container {
-    height: 12vh;
-    width: 100%;
-    min-height: 85px;
-}
-
-.navBar_main_container {
-    padding: 10px;
-    width: 95%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-}
-
-.navBar_logo_container {
-    width: 20%;
-}
-
-.navBar_logo {
-    width: auto;
-    height: 100%;
-}
-
-.nav_container_data {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav_container_data label {
-    cursor: pointer;
-    width: 25%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 0;
-}
-
-.navBar_account_container {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.navBar_third_logo {
-    width: 33%;
-}
-
-.navBar_account_container:last-child {
-    gap: 10%;
-}
-
-.mobileView {
-    display: none;
-}
-
-.language_icons {
-    margin-right: 25px;
-}
-
-@media all and (max-width: 768px) {
-    .nav_container_data, .navBar_account_container {
-        display: none;
-    }
-
-    .mobileView {
-        display: block;
-        margin-top: 15px;
-    }
-
-    .navBar_main_container {
-        justify-content: space-between;
-    }
-} */
-
 .navBar_container_main_container {
     width: 90%;
     min-height: 100px;
@@ -106,10 +28,57 @@
     color: #ffffff;
 }
 
-.theme_main_container {
-    width: 45px;
+.theme_main_container, .menu_main_container{
+    width: 46px;
     height: 45px;
     padding: 8px;
     background-color: rgb(108 97 97 / 90%);
     border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 22px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav_content_container li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul li:hover::before {
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+.nav_content_container {
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+}
+
+.menu_main_container {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .nav_content_container, .theme_main_container {
+        display: none;
+    }
+
+    .menu_main_container {
+        display: block;
+    }
 }
