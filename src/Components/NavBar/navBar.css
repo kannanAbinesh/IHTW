@@ -1,4 +1,4 @@
-.navBar_container {
+/* .navBar_container {
     height: 12vh;
     width: 100%;
     min-height: 85px;
@@ -74,4 +74,42 @@
     .navBar_main_container {
         justify-content: space-between;
     }
+} */
+
+.navBar_container_main_container {
+    width: 90%;
+    min-height: 100px;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1274px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 12px 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: auto;
+    max-width: 120px;
+    height: 100%;
+    max-height: 60px !important;
+    object-fit: contain;
+    object-position: left;
+}
+
+.nav_bar_container {
+    padding: 0 10px 0 10px;
+}
+
+.theme_container {
+    color: #ffffff;
+}
+
+.theme_main_container {
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    background-color: rgb(108 97 97 / 90%);
+    border-radius: 50%;
 }

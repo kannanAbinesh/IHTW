@@ -1,6 +1,9 @@
 /* Plugins */
 import React from "react";
 
+/* Components */
+import NavBar from "../NavBar/NavBar";
+
 /* Images */
 import homeBanner from '../../Images/HomeBanner.jpg';
 
@@ -13,7 +16,7 @@ class HomeBanner extends React.Component {
             <div className="home_banner_container">
                 <div className="home_banner_inner_container" style={{backgroundImage: `url(${homeBanner})`}}>
                     <div className="navBar_container">
-
+                        <NavBar />
                     </div>
                     <div className="home_banner_content_container">
                         <h1 className="home_banner_header">Rise Above the Rest.</h1>
