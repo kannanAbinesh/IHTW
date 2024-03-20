@@ -7,6 +7,7 @@ import homeBanner from '../../Images/HomeBanner.jpg';
 /* Style */
 import './homeBanner.css';
 
+
 class HomeBanner extends React.Component {
     render() {
         return(
