@@ -8,6 +8,7 @@ import HomeBanner from "../HomeBanner/HomeBanner";
 import Services from "../Services/Services";
 import Footer from "../Footer/Footer";
 import SubMainBanner from "../SubMainBanner/SubMainBanner";
+import HomeBannerLottie from "../HomeBannerLottie/HomeBannerLottie";
 
 /* Helpers and Actions */
 
@@ -20,6 +21,7 @@ class Home extends React.Component {
                 <HomeBanner />
                 <Services />
                 <SubMainBanner />
+                <HomeBannerLottie />
                 {/* <Social /> */}
                 {/* <Footer /> */}
             </div>
