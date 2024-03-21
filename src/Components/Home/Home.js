@@ -20,8 +20,8 @@ class Home extends React.Component {
                 {/* <NavBar /> */}
                 <HomeBanner />
                 <Services />
-                <SubMainBanner />
                 <HomeBannerLottie />
+                <SubMainBanner />
                 {/* <Social /> */}
                 {/* <Footer /> */}
             </div>

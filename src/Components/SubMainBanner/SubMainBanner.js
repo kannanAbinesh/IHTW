@@ -1,6 +1,6 @@
 const SubMainBanner = () => {
     return (
-        <div>
+        <div style={{marginTop: '70px'}}>
 
         </div>
     )
