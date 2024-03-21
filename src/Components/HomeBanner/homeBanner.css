@@ -49,6 +49,7 @@
 }
 
 .navBar_container {
+    z-index: 99;
     position: absolute;
     height: 15vh;
     width: 100%;
