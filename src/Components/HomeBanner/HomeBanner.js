@@ -20,8 +20,10 @@ class HomeBanner extends React.Component {
                         <NavBar />
                     </div>
                     <div className="home_banner_content_container">
-                        <h1 className="home_banner_header">Rise Above the Rest.</h1>
-                        <label className="home_banner_content">Experience Faster Internet.</label>
+                        <div className="home_Banner_main_container">
+                            <h1 className="home_banner_header">Rise Above the Rest.</h1>
+                            <label className="home_banner_content">Experience Faster Internet.</label>
+                        </div>
                     </div>
                     <div className="arrow_container">
                         <MdKeyboardArrowDown size={50} onClick={() => window.location.href='#services_container'}/>
