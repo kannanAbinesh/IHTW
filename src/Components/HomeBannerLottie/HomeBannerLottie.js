@@ -31,7 +31,6 @@ class HomeBannerLottie extends React.Component {
                             <Col lg={6} md={6} sm={12} xs={12} className='lotti_containers_show'>
                                 <div className='lotti_main_container'>
                                     <Lottie 
-                                        speed={0.2}  
                                         options={defaultOptions}
                                     />
                                 </div>

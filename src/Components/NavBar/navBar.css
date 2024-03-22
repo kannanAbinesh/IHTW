@@ -81,4 +81,8 @@ ul li:hover::before {
     .menu_main_container {
         display: block;
     }
+
+    .nav_bar_container {
+        padding: 0;
+    }
 }

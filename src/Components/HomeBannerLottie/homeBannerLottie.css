@@ -9,16 +9,18 @@
 .lotti_containers, .lotti_containers_show {
     flex: 0 0 auto;
     width: 50%;
+    padding: 0;
 }
 
 .lotti_main_container {
-    margin: 0 auto;
-    max-width: 500px
+    margin: 0 25px 0 0;
+    max-width: 605px
 }
 
 .lotti_main_data_container {
     margin: 0 auto;
-    max-width: 500px
+    max-width: 500px;
+    margin: 0 10px 0 25px;
 }
 
 .lottie_json {
@@ -71,6 +73,7 @@
     .lotti_containers {
         width: 100%;
         flex: 0 0 auto;
+        padding-left: 15px;
     }
 
     .lotti_containers_show {

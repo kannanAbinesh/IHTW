@@ -67,7 +67,6 @@
     bottom: 20px;
     right: 50px;
     z-index: 0;
-    padding: 10px;
     animation: MoveUpDown 1.3s linear infinite;
 }
 
