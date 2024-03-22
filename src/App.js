@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 /* Components */
 import Home from './Components/Home/Home';
 import NotFound from "./Components/NotFound/NotFound";
+import About from "./Components/About/About";
 
 /* Helpers and Functions */
 import store from "./Reducers";
@@ -22,7 +23,8 @@ function App() {
         <BrowserRouter> 
             <Routes>
               <Route path="*" Component={NotFound} />
-              <Route path="/" Component={Home}/>
+              <Route path="/" Component={Home} />
+              <Route path="/about" Component={About} />
             </Routes>
           </BrowserRouter>
       </Provider>

@@ -7,6 +7,7 @@ import { closeSideBar } from "../../Actions/SideBarAction";
 
 /* Style */
 import './sideBar.css';
+import { Link } from "react-router-dom";
 
 const SideBar = ({ closeSideBar, isOpen }) => {
     return (
@@ -16,25 +17,25 @@ const SideBar = ({ closeSideBar, isOpen }) => {
                 <Offcanvas.Body className="side_bar_body">
                     <ul className="side_bar_container">
                         <li  className="side_bar_content">
-                            <a href="/"  className="side_bar_navigator">Home</a>
+                            <Link to="/" className="side_bar_navigator" onClick={() => closeSideBar()}>Home</Link>
                         </li>
                         <li  className="side_bar_content">
-                            <a href="/"  className="side_bar_navigator">About</a>
+                            <Link to="/about" className="side_bar_navigator" onClick={() => closeSideBar()}>About</Link>
                         </li>
                         <li  className="side_bar_content">
-                            <a href="/"  className="side_bar_navigator">Contact us</a>
+                            <Link to="/contact" className="side_bar_navigator" onClick={() => closeSideBar()}>Contact us</Link>
                         </li>
                         <li  className="side_bar_content">
-                            <a href="/"  className="side_bar_navigator">Projects</a>
+                            <Link to="/project" className="side_bar_navigator" onClick={() => closeSideBar()}>Projects</Link>
                         </li>
                         <li  className="side_bar_content">
-                            <a href="/"  className="side_bar_navigator">Careers</a>
+                            <Link to="/career" className="side_bar_navigator" onClick={() => closeSideBar()}>Careers</Link>
                         </li>
                         <li  className="side_bar_content">
-                            <a href="/"  className="side_bar_navigator">Light mode</a>
+                            <span className="side_bar_navigator">Light mode</span>
                         </li>
                         <li  className="side_bar_content">
-                            <a href="/"  className="side_bar_navigator">Dark mode</a>
+                            <span className="side_bar_navigator">Dark mode</span>
                         </li>
                     </ul>
                 </Offcanvas.Body>

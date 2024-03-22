@@ -3,6 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { MdOutlineLightMode } from "react-icons/md";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 /* Components */
 import SideBar from "../SideBar/SideBar";
@@ -29,14 +30,14 @@ class NavBar extends React.Component {
             <div>
                 <SideBar />
                 <div className="navBar_container_main_container">
-                    <a href="/" className="logo_container">
+                    <Link to={"/"} className="logo_container">
                         <img src={logo} alt="logo" className="logo"/>
-                    </a>
+                    </Link>
                     <ul className="nav_content_container">
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Career</a></li>
-                        <li><a href="/">About us</a></li>
-                        <li><a href="/">Contant</a></li>
+                        <li><Link to={"/project"}>Projects</Link></li>
+                        <li><Link to={"/career"}>Career</Link></li>
+                        <li><Link to={"/about"}>About us</Link></li>
+                        <li><Link to={"/contact"}>Contant</Link></li>
                     </ul>
                     <div className="nav_bar_container">
                         <div className="theme_main_container">
