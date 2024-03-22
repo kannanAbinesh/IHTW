@@ -65,7 +65,7 @@
     color: #ffffff;
     position: absolute;
     bottom: 20px;
-    right: 50px;
+    right: 40px;
     z-index: 0;
     animation: MoveUpDown 1.3s linear infinite;
 }
