@@ -21,8 +21,8 @@ class HomeBanner extends React.Component {
                     </div>
                     <div className="home_banner_content_container">
                         <div className="home_Banner_main_container">
-                            <h1 className="home_banner_header">Rise Above the Rest.</h1>
-                            <label className="home_banner_content">Experience Faster Internet.</label>
+                            <h1 className="home_banner_header">Integrated House Technical Works.</h1>
+                            <label className="home_banner_content">Mechanical Electrical Plumping</label>
                         </div>
                     </div>
                     <div className="arrow_container">
