@@ -21,7 +21,6 @@ class NavBar extends React.Component {
 
     constructor() {
         super();
-        
     };
 
     render() {

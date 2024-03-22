@@ -1,0 +1,46 @@
+.about_lottie_container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 24px;
+    text-align: left;
+    width: 100%;
+}
+
+.about_lottie_first {
+    display: none;
+}
+
+.about_lottie_second {
+    flex: 0 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+.about_lottie_third {
+    flex: 0 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+.about_lottie_content {
+    margin: 0 25px 0 0;
+    max-width: 605px;
+}
+
+.about_lottie_json {
+    height: 460px;
+    width: 460px;
+    border-radius: 20px;
+}
+
+.about_text {
+    flex: 0 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .about_lottie_second {
+        display: none;
+    }
+}

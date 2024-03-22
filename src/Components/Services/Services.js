@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 /* Helpers and actions */
 import { serviceHelpers } from "./serviceHelpers";

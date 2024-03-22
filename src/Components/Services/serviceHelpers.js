@@ -5,7 +5,6 @@ import { PiBuildings } from "react-icons/pi";
 /* Images */
 import serviceBannerOne from '../../Images/serviceBannerOne.jpg';
 import serviceBannerTwo from '../../Images/serviceBannerTwo.jpg';
-import mainBannerImage from '../../Images/mainBannerImage.jpg';
 
 export const serviceHelpers = [
     {
