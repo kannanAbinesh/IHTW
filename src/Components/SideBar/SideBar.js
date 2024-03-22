@@ -20,7 +20,7 @@ const SideBar = ({ closeSideBar, isOpen }) => {
                             <Link to="/" className="side_bar_navigator" onClick={() => closeSideBar()}>Home</Link>
                         </li>
                         <li  className="side_bar_content">
-                            <Link to="/about" className="side_bar_navigator" onClick={() => closeSideBar()}>About</Link>
+                            <Link to={"/about"} className="side_bar_navigator" onClick={() => closeSideBar()}>About</Link>
                         </li>
                         <li  className="side_bar_content">
                             <Link to="/contact" className="side_bar_navigator" onClick={() => closeSideBar()}>Contact us</Link>
