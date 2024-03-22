@@ -3,28 +3,40 @@ import { Offcanvas } from "react-bootstrap"
 import { connect } from "react-redux";
 
 /* Actions and Helpers */
-import { sideBarData } from "./sideBarHelper";
 import { closeSideBar } from "../../Actions/SideBarAction";
 
 /* Style */
 import './sideBar.css';
 
 const SideBar = ({ closeSideBar, isOpen }) => {
-    console.log(isOpen, 'jiiii')
     return (
         <div>
-            <Offcanvas show={isOpen} onHide={closeSideBar} className="sideBar_container">
-                <Offcanvas.Header closeButton >
-                    <Offcanvas.Title>Welcome to IHTW</Offcanvas.Title>    
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                    <div>
-                        {
-                            sideBarData?.map(i => (
-                                <p className="sideBar_data">{i?.name}</p>
-                            ))
-                        }
-                    </div>
+            <Offcanvas show={isOpen} onHide={closeSideBar} placement="end" className="side_bar_main_container">
+                <Offcanvas.Header closeButton />
+                <Offcanvas.Body className="side_bar_body">
+                    <ul className="side_bar_container">
+                        <li  className="side_bar_content">
+                            <a href="/"  className="side_bar_navigator">Home</a>
+                        </li>
+                        <li  className="side_bar_content">
+                            <a href="/"  className="side_bar_navigator">About</a>
+                        </li>
+                        <li  className="side_bar_content">
+                            <a href="/"  className="side_bar_navigator">Contact us</a>
+                        </li>
+                        <li  className="side_bar_content">
+                            <a href="/"  className="side_bar_navigator">Projects</a>
+                        </li>
+                        <li  className="side_bar_content">
+                            <a href="/"  className="side_bar_navigator">Careers</a>
+                        </li>
+                        <li  className="side_bar_content">
+                            <a href="/"  className="side_bar_navigator">Light mode</a>
+                        </li>
+                        <li  className="side_bar_content">
+                            <a href="/"  className="side_bar_navigator">Dark mode</a>
+                        </li>
+                    </ul>
                 </Offcanvas.Body>
             </Offcanvas>
         </div>

@@ -1,7 +1,37 @@
-.sideBar_container {
-    width: 100%;
+.side_bar_main_container {
+    min-width: 100vw;
+    width: 100vw;
 }
 
-.sideBar_data {
-    line-height: 25px;
+.side_bar_body {
+    padding: 0;
+}
+
+.side_bar_container {
+    padding: 0;
+}
+
+.side_bar_container::after {
+    content: '';
+    height: 1px;
+    background-color: #696969;
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+}
+
+.side_bar_content {
+    padding: 0px 0;
+    display: block;
+    margin: 0;
+}
+
+.side_bar_navigator {
+    height: 62px !important;
+    line-height: 64px;
+    display: block;
+    padding: 0 20px;
+    font-weight: normal;
+    color: #696969;
+    text-decoration: none;
 }
