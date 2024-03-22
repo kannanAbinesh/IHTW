@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 767px) {
     .home_banner_container {
-        height:70vh !important;
+        height:100vh !important;
     }
 
     .home_banner_inner_container {
@@ -100,5 +100,4 @@
     .home_Banner_main_container {
         top: 10%;
     }
-
 }
