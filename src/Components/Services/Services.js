@@ -38,7 +38,7 @@ class Services extends React.Component {
                                             slidesPerView: 1,
                                             spaceBetween: 40,
                                         },
-                                        1024: {
+                                        1025: {
                                             slidesPerView: 2,
                                             spaceBetween: 50,
                                         }

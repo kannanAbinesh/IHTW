@@ -24,12 +24,9 @@ const About = () => {
                 <Container className='about_lottie_container'>
                     <Row>
                         <Col lg={6} md={6} sm={12} xs={12} className='about_lottie_first'>
-                        
-                        </Col>
-                        <Col lg={6} md={6} sm={12} xs={12} className='about_lottie_second'>
                             
                         </Col>
-                        <Col lg={6} md={6} sm={12} xs={12} className='about_lottie_third'>
+                        <Col lg={6} md={6} sm={12} xs={12} className='about_lottie_second'>
                             <div className='about_lottie_content'>
                                 <Lottie options={defaultOptions} />
                             </div>

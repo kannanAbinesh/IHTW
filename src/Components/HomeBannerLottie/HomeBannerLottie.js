@@ -25,7 +25,7 @@ class HomeBannerLottie extends React.Component {
         };
         return (
             <div>
-                <div>
+                <div className='lottie_main_container'>
                     <Container className='lottie_container'>
                         <Row>
                             <Col lg={6} md={6} sm={12} xs={12} className='lotti_containers_show'>

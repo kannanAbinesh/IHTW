@@ -7,16 +7,12 @@
 }
 
 .about_lottie_first {
-    display: none;
-}
-
-.about_lottie_second {
     flex: 0 0 auto;
     padding: 0;
     width: 50%;
 }
 
-.about_lottie_third {
+.about_lottie_second {
     flex: 0 0 auto;
     padding: 0;
     width: 50%;
@@ -40,7 +36,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .about_lottie_second {
+    .about_lottie_first {
         display: none;
     }
 }
