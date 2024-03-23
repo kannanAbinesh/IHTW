@@ -8,7 +8,7 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 80%;
+    background-position: 50%;
     position: relative;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .home_banner_header {
-    font-size: 55px;
+    font-size: 42px;
     font-weight: 600;
     color: #ffffff;
     max-width: 800px;
@@ -83,7 +83,7 @@
 
 @media screen and (max-width: 767px) {
     .home_banner_container {
-        height:95vh !important;
+        height:70vh !important;
     }
 
     .home_banner_inner_container {
@@ -91,7 +91,7 @@
     }
 
     .home_banner_header {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     .home_banner_content {

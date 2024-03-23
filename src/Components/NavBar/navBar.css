@@ -26,6 +26,7 @@
 
 .theme_container {
     color: #ffffff;
+    cursor: pointer;
 }
 
 .theme_main_container, .menu_main_container{

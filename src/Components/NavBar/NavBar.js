@@ -13,6 +13,7 @@ import { openSideBar } from "../../Actions/SideBarAction";
 
 /* Images */
 import logo from '../../Images/logo.png';
+import logoTwo from '../../Images/logoTwo.png';
 
 /* Style */
 import './navBar.css';
@@ -30,7 +31,7 @@ class NavBar extends React.Component {
                 <SideBar />
                 <div className="navBar_container_main_container">
                     <Link to={"/"} className="logo_container">
-                        <img src={logo} alt="logo" className="logo"/>
+                        <img src={logoTwo} alt="logo" className="logo"/>
                     </Link>
                     <ul className="nav_content_container">
                         <li><Link to={"/project"}>Projects</Link></li>
