@@ -12,6 +12,7 @@ import logoTwo from '../../Images/logoTwo.png';
 
 /* Style */
 import './footer.css';
+import { Link } from "react-router-dom";
 
 class Footer extends React.Component {
     render() {
@@ -41,11 +42,11 @@ class Footer extends React.Component {
                     <Col className="footer_col">
                         <label className="footer_list_header">Company <div className="underline_header"><span></span></div> </label>
                         <ul className="footer_list">
-                            <a href="/">Home</a>
-                            <a href="/about">About</a>
-                            <a href="/Products">Products</a>
-                            <a href="/contanctUs">Contact us</a>
-                            <a href="/career">Careers</a>
+                            <Link to={'/'} className="footer_list_link">Home</Link>
+                            <Link to={'/about'}  className="footer_list_link" >About</Link>
+                            <Link to={'/product'}  className="footer_list_link">Products</Link>
+                            <Link to={'/contactUs'}  className="footer_list_link">Contact us</Link>
+                            <Link to={'/career'}  className="footer_list_link">Careers</Link>
                         </ul>
                     </Col>
                     <Col className="footer_col">
