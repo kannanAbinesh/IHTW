@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 /* Styles and Animations */
 import './about.css';
 import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
+import Footer from '../Footer/Footer';
 
 const About = () => {
 
@@ -39,6 +40,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 };
