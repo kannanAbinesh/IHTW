@@ -96,6 +96,7 @@ a span {
 }
 
 .footer_list_link {
+    width: auto;
     text-decoration: none;
     display: block;
     color: #fff;
@@ -173,13 +174,8 @@ a span {
         flex-basis: 50%;
     }
 
-    .footer_col:nth-child(3) {
-        padding: 50px 10px 10px 10px;
-    }
-
-    .footer_col:nth-child(4) {
-        padding-top: 50px;
-        padding-left: 0px;
+    .footer_col:nth-child(3), .footer_col:nth-child(4) {
+        padding: 10px 10px 10px 10px;
     }
 }
 
@@ -193,10 +189,6 @@ a span {
     .footer_col {
         width: 100% !important;
         flex-basis: 100%;
-        padding: 10px 10px 10px 10px 10px !important;
-    }
-    
-    .footer_col:nth-child(4) {
         padding: 10px 10px 10px 10px 10px !important;
     }
 }
