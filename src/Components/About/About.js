@@ -55,28 +55,8 @@ const About = () => {
                         <label>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta 
                             fugiat obcaecati maiores, nesciunt nihil vitae, mollitia debitis libero 
-                            repellat voluptate excepturi, 
-                            illum aspernatur dignissimos earum aliquam repudiandae blanditiis. Quidem.
+                            repellat voluptate excepturi, illum aspernatur dignissimos earum aliquam repudiandae blanditiis. Quidem.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta 
-                            fugiat obcaecati maiores, nesciunt nihil vitae, mollitia debitis libero 
-                            repellat voluptate excepturi, 
-                            illum aspernatur dignissimos earum aliquam repudiandae blanditiis. Quidem.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta 
-                            fugiat obcaecati maiores, nesciunt nihil vitae, mollitia debitis libero 
-                            repellat voluptate excepturi, 
-                            illum aspernatur dignissimos earum aliquam repudiandae blanditiis. Quidem.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta 
-                            fugiat obcaecati maiores, nesciunt nihil vitae, mollitia debitis libero 
-                            repellat voluptate excepturi, 
-                            illum aspernatur dignissimos earum aliquam repudiandae blanditiis. Quidem.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta 
-                            fugiat obcaecati maiores, nesciunt nihil vitae, mollitia debitis libero 
-                            repellat voluptate excepturi, 
-                            illum aspernatur dignissimos earum aliquam repudiandae blanditiis. Quidem.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta 
-                            fugiat obcaecati maiores, nesciunt nihil vitae, mollitia debitis libero 
-                            repellat voluptate excepturi, 
-                            illum aspernatur dignissimos earum aliquam repudiandae blanditiis. Quidem.
                         </label>
                     </div>
                 </div>
@@ -112,7 +92,7 @@ const About = () => {
                 <div>
                     <Container className='about_sub_container'>
                         <Row className='about_sub_row'>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
+                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container_second'>
                                 <div className='about_sub_header_container'>
                                     <div className='about_text_header'>
                                         <h2 className='about_sub_header'>Lorem ipsum</h2>
@@ -123,12 +103,12 @@ const About = () => {
                                     Qui laudantium, ad delectus eum veritatis minima?
                                 </div>
                             </Col>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
+                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container_second'>
                                 <div className='about_sub_image_container'>
                                     <img src={subBannerImageOne} className='sub_about_image' alt='about images' />
                                 </div>
                             </Col>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
+                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container_second'>
                                 <div className='about_sub_image_container'>
                                     <img src={subBannerImageOne} className='sub_about_image' alt='about images' />
                                 </div>
