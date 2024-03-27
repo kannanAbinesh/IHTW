@@ -136,6 +136,28 @@
     margin: 10px 0 0;
 }
 
+.gallery_container  {
+    -webkit-column-count: 3;
+    overflow-y: hidden;
+    column-count: 3;
+    -moz-column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 0 12px;
+}
+
+.gallery_single_imahe_container {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.gallery_image {
+    width: 100%;
+}
+
 @media screen and (max-width: 764px) {
     .main_about_container {
         padding: 0 16px;
