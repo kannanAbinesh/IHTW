@@ -6,9 +6,6 @@ import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
 /* Components */
 import Footer from '../Footer/Footer';
 
-/* Images */
-import subBannerImageOne from '../../Images/aboutSubImage.avif';
-
 import img1 from '../../Images/HomeBanner.jpg';
 import img2 from '../../Images/bannerImage.avif';
 import img3 from '../../Images/homeBannerOne.jpg';
@@ -21,6 +18,7 @@ import img9 from '../../Images/aboutSubImage.avif';
 
 /* Styles and Animations */
 import './about.css';
+import aboutData from './aboutHelper';
 
 const About = () => {
 
@@ -75,7 +73,8 @@ const About = () => {
         {
             id: 10,
             image: 'https://media.istockphoto.com/id/1368628035/photo/brooklyn-bridge-at-sunset.jpg?s=612x612&w=0&k=20&c=hPbMbTYRAVNYWAUMkl6r62fPIjGVJTXzRURCyCfoG08='
-        }
+        },
+        
     ]
     return (
         <div>
@@ -114,69 +113,42 @@ const About = () => {
                     </div>
                 </div>
 
-                <div>
-                    <Container className='about_sub_container'>
-                        <Row className='about_sub_row'>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
-                                <div className='about_sub_image_container'>
-                                    <img src={subBannerImageOne} className='sub_about_image' alt='about images' />
-                                </div>
-                            </Col>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
-                                <div className='about_sub_header_container'>
-                                    <div className='about_text_header'>
-                                        <h2 className='about_sub_header'>Our Mission</h2>
-                                    </div>
-                                </div>
-                                <div className='about_sub_text'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Qui laudantium, ad delectus eum veritatis minima?
-                                </div>
-                            </Col>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
-                                <div className='about_sub_image_container'>
-                                    <img src={subBannerImageOne} className='sub_about_image' alt='about images' />
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+                <Container className='about_sub_container'>
+                    {
+                        aboutData?.map((i) => {
+                            return (
+                                <Row className='about_sub_row'>
+                                    <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
+                                        <div className='about_sub_image_container'>
+                                            <img src={i?.image} className='sub_about_image' alt='about images' />
+                                        </div>
+                                    </Col>
+                                    <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
+                                        <div className='about_sub_header_container'>
+                                            <div className='about_text_header'>
+                                                <h2 className='about_sub_header'>{i?.header}</h2>
+                                            </div>
+                                        </div>
+                                        <div className='about_sub_text'>{i?.data}</div>
+                                    </Col>
+                                    <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
+                                        <div className='about_sub_image_container'>
+                                            <img src={i?.image} className='sub_about_image' alt='about images' />
+                                        </div>
+                                    </Col>
+                                </Row>
+                            )
+                        })
+                    }
+                </Container>
 
-                <div>
-                    <Container className='about_sub_container'>
-                        <Row className='about_sub_row'>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container_second'>
-                                <div className='about_sub_header_container'>
-                                    <div className='about_text_header'>
-                                        <h2 className='about_sub_header'>Lorem ipsum</h2>
-                                    </div>
-                                </div>
-                                <div className='about_sub_text'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Qui laudantium, ad delectus eum veritatis minima?
-                                </div>
-                            </Col>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container_second'>
-                                <div className='about_sub_image_container'>
-                                    <img src={subBannerImageOne} className='sub_about_image' alt='about images' />
-                                </div>
-                            </Col>
-                            <Col lg={6} md={6} sm={12} xs={12} className='about_col_container_second'>
-                                <div className='about_sub_image_container'>
-                                    <img src={subBannerImageOne} className='sub_about_image' alt='about images' />
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
-                
                 <div className='main_about_container'>
                     <div className='gallery_container'>
                         {
                             imageData?.map((i, index) => {
                                 return (
                                     <div className='gallery_single_imahe_container' key={index}>
-                                        <img src={i?.image} className='gallery_image'/>
+                                        <img src={i?.image} className='gallery_image' alt='about us collage'/>
                                     </div>
                                 )
                             })

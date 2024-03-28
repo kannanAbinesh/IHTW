@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import HomeBanner from "../HomeBanner/HomeBanner";
 import Services from "../Services/Services";
 import Footer from "../Footer/Footer";
-import SubMainBanner from "../SubMainBanner/SubMainBanner";
 import HomeBannerLottie from "../HomeBannerLottie/HomeBannerLottie";
 import Projects from "../Projects/Projects";
 
@@ -21,7 +20,6 @@ class Home extends React.Component {
                 <Services />
                 <Projects />
                 <HomeBannerLottie />
-                {/* <SubMainBanner /> */}
                 <Footer />
             </div>
         )

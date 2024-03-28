@@ -9,6 +9,9 @@ import 'swiper/css/pagination';
 import Home from './Components/Home/Home';
 import NotFound from "./Components/NotFound/NotFound";
 import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
+import Career from "./Components/Career/Career";
+import SiteAdmin from "./Components/SiteAdmin/SiteAdmin";
 
 /* Helpers and Functions */
 import store from "./Reducers";
@@ -25,6 +28,10 @@ function App() {
               <Route path="*" Component={NotFound} />
               <Route path="/" Component={Home} />
               <Route path="/about" Component={About} />
+              <Route path="/contact" Component={Contact} />
+              <Route path="/career" Component={Career} />
+
+              <Route path="/siteAdmin" Component={SiteAdmin} />
             </Routes>
           </BrowserRouter>
       </Provider>
