@@ -8,6 +8,7 @@ import Services from "../Services/Services";
 import Footer from "../Footer/Footer";
 import HomeBannerLottie from "../HomeBannerLottie/HomeBannerLottie";
 import Projects from "../Projects/Projects";
+import { Link } from "react-router-dom";
 
 /* Helpers and Actions */
 
@@ -21,6 +22,7 @@ class Home extends React.Component {
                 <Projects />
                 <HomeBannerLottie />
                 <Footer />
+                <Link to={'/siteAdmin'} >hi</Link>
             </div>
         )
     }
