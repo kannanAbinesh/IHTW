@@ -5,12 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-/* Components */
+/* User Components */
 import Home from './Components/Home/Home';
 import NotFound from "./Components/NotFound/NotFound";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
 import Career from "./Components/Career/Career";
+import MainProject from "./Components/MainProject/MainProject";
+
+/* Admin Components */
 import SiteAdmin from "./Components/SiteAdmin/SiteAdmin";
 
 /* Helpers and Functions */
@@ -30,6 +33,7 @@ function App() {
               <Route path="/about" Component={About} />
               <Route path="/contact" Component={Contact} />
               <Route path="/career" Component={Career} />
+              <Route path="/project" Component={MainProject} />
 
               <Route path="/siteAdmin" Component={SiteAdmin} />
             </Routes>

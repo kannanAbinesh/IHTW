@@ -1,7 +1,6 @@
 /* Plugins */
 import Lottie from 'react-lottie';
 import { Col, Container, Row } from 'react-bootstrap';
-import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
 
 /* Components */
 import Footer from '../Footer/Footer';
@@ -16,9 +15,12 @@ import img7 from '../../Images/mainBannerImage.avif';
 import img8 from '../../Images/homeBannerOne.jpg';
 import img9 from '../../Images/aboutSubImage.avif';
 
-/* Styles and Animations */
-import './about.css';
+/* Helpers and Actions */
 import aboutData from './aboutHelper';
+
+/* Styles and Animations */
+import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
+import './about.css';
 
 const About = () => {
 
