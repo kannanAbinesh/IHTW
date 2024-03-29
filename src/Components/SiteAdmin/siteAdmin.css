@@ -88,3 +88,9 @@
     }
 
 }
+
+@media screen and (max-width: 425px) {
+    .site_admin_back_btn_container {
+        left: 15px
+    }
+}
