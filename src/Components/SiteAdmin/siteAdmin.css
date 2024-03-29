@@ -3,6 +3,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .site_admin_login_row {
@@ -14,7 +16,6 @@
     display: grid;
     padding: 0;
     grid-template-columns: 50% 50%;
-    height: 100vh;
     max-width: 100%;
 }
 
@@ -23,18 +24,22 @@
     height: 100%;
     padding-top: 64%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: 70% 100%;
+    border-radius: 10px;
 }
 
 .site_admin_login_col {
+    background-color: #fff;
     padding: 16% 0;
     width: 100%;
+    position: relative;
 }
 
 .site_admin_login_main_container {
     width: 100%;
     max-width: 450px;
-    margin: 0 auto;
+    margin: auto auto;
     padding: 0 15px;
 }
 
@@ -67,11 +72,17 @@
     width: 100%;
 }
 
+.site_admin_back_btn_container {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .side_admin_login_image {
         display: none;
     }
-    
+
     .site_admi_login_main_container {
         grid-template-columns: 100%;
     }

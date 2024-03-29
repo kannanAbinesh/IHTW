@@ -33,3 +33,26 @@
     height: 50px !important;
     width: 100%;
 }
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget_admin_password_btn {
+    cursor: pointer;
+    color: #008489;
+    text-decoration: underline;
+}
+
+.show_password_container input{
+    vertical-align: middle;
+    margin-right: 5px;
+    height: 15px;
+    width: 15px;
+}
+
+.show_password_container label {
+    vertical-align: middle;
+}
