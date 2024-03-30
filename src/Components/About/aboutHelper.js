@@ -1,17 +1,19 @@
-import subBannerImageOne from '../../Images/aboutSubImage.avif';
+/* Plugins */
+import { SlPeople } from "react-icons/sl";
+import { BiBuildings } from "react-icons/bi";
 
 const aboutData = [
     {
         id: 1,
-        image: subBannerImageOne,
-        header: 'Our Mission',
-        data: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laudantium, ad delectus eum veritatis minima?'
+        icon: <SlPeople size={30} />,
+        count: 270,
+        descriptions: 'Projects'
     },
     {
         id: 2,
-        image: subBannerImageOne,
-        header: 'Lorem ipsum',
-        data: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laudantium, ad delectus eum veritatis minima?'
+        icon: <BiBuildings size={30} />,
+        count: "475,052",
+        descriptions: 'Clients'
     }
 ];
 

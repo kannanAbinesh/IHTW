@@ -7,6 +7,7 @@
 }
 
 .about_row_container {
+    margin-top: 70px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -162,7 +163,107 @@
     border-radius: 10px;
 }
 
-@media screen and (max-width: 764px) {
+.story_main_container {
+    padding: 30px;
+    text-align: left;
+}
+
+.story_year {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+    display: block;
+}
+
+.Story_header {
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.story_content {
+    max-width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.about_us_summary_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* padding: 10px; */
+    /* margin-left: -80px; */
+}
+
+.about_us_summary_images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_summary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summery_icons {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.summary_content {
+    border-left: 1px solid #d8d8d8;
+    padding: 3px;
+}
+
+.about_inner_count {
+    font-size: 40px;
+    line-height: 1em;
+}
+
+.about_inner_content {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+    .summery_icons {
+        margin: 0 5px 0 0;
+        height: 40px;
+        width: 40px;
+    }
+
+    .about_inner_count {
+        font-size: 25px;
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_inner_content {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .summery_icons {
+        height: 20px;
+        width: 20px;
+    }
+
+    .about_inner_count {
+        font-size: 16px;
+        line-height: 1em;
+    }
+
+    /* .about_us_summary_images {
+        flex-basis: 100%;
+    } */
+
     .main_about_container {
         padding: 0 16px;
     }
@@ -215,6 +316,15 @@
 
     .about_col:nth-child(1) {
         display: none;
+    }
+
+    .story_year {
+        font-size: 80px;
+    }
+
+    .story_content {
+        font-size: 16px;
+        line-height: 28px;
     }
 
 }

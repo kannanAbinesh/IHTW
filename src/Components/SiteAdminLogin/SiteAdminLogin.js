@@ -72,7 +72,7 @@ class SiteAdminLogin extends React.Component {
                         name='email'
                         component={this.handleChange}
                         label='Email'
-                        />
+                    />
                     <Field
                         name='password'
                         component={this.handlePassword}

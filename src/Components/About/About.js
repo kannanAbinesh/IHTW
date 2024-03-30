@@ -1,109 +1,25 @@
 /* Plugins */
-import Lottie from 'react-lottie';
 import { Col, Container, Row } from 'react-bootstrap';
 
 /* Components */
 import Footer from '../Footer/Footer';
 
-import img1 from '../../Images/HomeBanner.jpg';
-import img2 from '../../Images/bannerImage.avif';
-import img3 from '../../Images/homeBannerOne.jpg';
-import img4 from '../../Images/serviceBannerTwo.jpg';
-import img5 from '../../Images/serviceBannerOne.jpg';
-import img6 from '../../Images/mainBannerImage.jpg';
-import img7 from '../../Images/mainBannerImage.avif';
-import img8 from '../../Images/homeBannerOne.jpg';
-import img9 from '../../Images/aboutSubImage.avif';
-
 /* Helpers and Actions */
 import aboutData from './aboutHelper';
+import { SlPeople } from "react-icons/sl";
 
 /* Styles and Animations */
-import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
 import './about.css';
 
 const About = () => {
-
-    /* Lottie settings */
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: aboutLottie,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice",
-          className: 'about_lottie_json'
-        }
-    };
-
-    let imageData = [
-        {
-            id: 1,
-            image: img1
-        },
-        {
-            id: 2,
-            image: img2
-        },
-        {
-            id: 3,
-            image: img3
-        },
-        {
-            id: 4,
-            image: img4
-        },
-        {
-            id: 5,
-            image: img5
-        },
-        {
-            id: 6,
-            image: img6
-        },
-        {
-            id: 7,
-            image: img7
-        },
-        {
-            id: 8,
-            image: img8
-        },
-        {
-            id: 9,
-            image: img9
-        },
-        {
-            id: 10,
-            image: 'https://media.istockphoto.com/id/1368628035/photo/brooklyn-bridge-at-sunset.jpg?s=612x612&w=0&k=20&c=hPbMbTYRAVNYWAUMkl6r62fPIjGVJTXzRURCyCfoG08='
-        },
-        
-    ]
+    
     return (
         <div>
             <div className='about_container'>
-                <Container>
-                    <Row className='about_row_container'>
-                        <Col lg={6} md={6} sm={12} xs={12} className='about_col'>
-                            <div className='about_header_text'>
-                                <div className='about_main_header'>
-                                    <h4 className='about_headers_content'>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        In sit distinctio dolore reprehenderit.
-                                    </h4>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col lg={6} md={6} sm={12} xs={12} className='about_col'>
-                            <div>
-                                <Lottie options={defaultOptions} />
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
 
                 <div className='main_about_container'>
                     <div className='main_about_header_container'>
-                        <h2 className='main_about_header_content'>About Us</h2>
+                        <h2 className='main_about_header_content'>Who we are</h2>
                     </div>
                     <div className='main_about_para_container'>
                         <label>
@@ -115,47 +31,55 @@ const About = () => {
                     </div>
                 </div>
 
-                <Container className='about_sub_container'>
-                    {
-                        aboutData?.map((i) => {
-                            return (
-                                <Row className='about_sub_row'>
-                                    <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
-                                        <div className='about_sub_image_container'>
-                                            <img src={i?.image} className='sub_about_image' alt='about images' />
-                                        </div>
-                                    </Col>
-                                    <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
-                                        <div className='about_sub_header_container'>
-                                            <div className='about_text_header'>
-                                                <h2 className='about_sub_header'>{i?.header}</h2>
-                                            </div>
-                                        </div>
-                                        <div className='about_sub_text'>{i?.data}</div>
-                                    </Col>
-                                    <Col lg={6} md={6} sm={12} xs={12} className='about_col_container'>
-                                        <div className='about_sub_image_container'>
-                                            <img src={i?.image} className='sub_about_image' alt='about images' />
-                                        </div>
-                                    </Col>
-                                </Row>
-                            )
-                        })
-                    }
+                <div className='main_about_container'>
+                    <Container>
+                        <Row className='about_us_summary_container'>
+                            <Col className='about_us_summary_images'>
+                                <SlPeople className='summery_icons' />
+                                <div className='summary_content'>
+                                    <div className='about_inner_count'>500</div>
+                                    <div className='about_inner_content'>Projects</div>
+                                </div>
+                            </Col>
+                            <Col className='about_us_summary_images'>
+                                <SlPeople className='summery_icons' />
+                                <div className='summary_content'>
+                                    <div className='about_inner_count'>453,586</div>
+                                    <div className='about_inner_content'>Clients</div>
+                                </div>
+                            </Col>
+                            <Col className='about_us_summary_images'>
+                                <SlPeople className='summery_icons' />
+                                <div className='summary_content'>
+                                    <div className='about_inner_count'>500,514</div>
+                                    <div className='about_inner_content'>Projects</div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+
+                <Container>
+                    <Row className='about_row_container'>
+                        <div className='story_main_container'>
+                            <label className='Story_header'>Our Story</label>
+                            <label className='story_year'>2004</label>
+                            <div className='story_content'>
+                                Lorem ipsum dolor sit amet consectetur, 
+                                adipisicing elit. Minus, obcaecati. Ad velit, ex nulla sit rerum magni ut 
+                                debitis dignissimos labore repudiandae doloribus possimus, nam quisquam vel 
+                                cupiditate molestiae eligendi?
+                                Lorem ipsum dolor sit amet consectetur, 
+                                adipisicing elit. Minus, obcaecati. Ad velit, ex nulla sit rerum magni ut 
+                                debitis dignissimos labore repudiandae doloribus possimus, nam quisquam vel 
+                                cupiditate molestiae eligendi?
+                            </div>
+                        </div>
+                    </Row>
                 </Container>
 
-                <div className='main_about_container'>
-                    <div className='gallery_container'>
-                        {
-                            imageData?.map((i, index) => {
-                                return (
-                                    <div className='gallery_single_imahe_container' key={index}>
-                                        <img src={i?.image} className='gallery_image' alt='about us collage'/>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
+                <div>
+                    
                 </div>
             </div>
             <Footer />
