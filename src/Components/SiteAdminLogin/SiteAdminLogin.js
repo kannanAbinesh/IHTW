@@ -20,19 +20,17 @@ class SiteAdminLogin extends React.Component {
         };
     };
 
-    handleChange = ({input, label, type, className, meta: { touched, error }}) => {
+    handleChange = ({input, label, type, meta: { touched, error }}) => {
         return (
             <div className="site_admin_login_form_container">
-                <Form>
-                    <label className="site_admin_login_label">{label}</label>
-                    <Form.Control
-                        {...input}
-                        placeholder={label}
-                        className="site_admin_login_field"
-                        type={type}
-                    />
-                    {touched && error && <span className="error_tag">{error}</span>}
-                </Form>
+                <label className="site_admin_login_label">{label}</label>
+                <Form.Control
+                    {...input}
+                    placeholder={label}
+                    className="site_admin_login_field"
+                    type={type}
+                />
+                {touched && error && <span className="error_tag">{error}</span>}
             </div>
         )
     };
@@ -42,22 +40,20 @@ class SiteAdminLogin extends React.Component {
         const { show } = this.state;
         return (
             <div className="site_admin_login_form_container">
-                <Form>
-                    <label className="site_admin_login_label">{label}</label>
-                    <Form.Control
-                        {...input}
-                        placeholder={label}
-                        className="site_admin_login_field"
-                        type={show ? 'text' : 'password'}
-                    />
-                    {touched && error && <span className="error_tag">{error}</span>}
-                </Form>
+                <label className="site_admin_login_label">{label}</label>
+                <Form.Control
+                    {...input}
+                    placeholder={label}
+                    className="site_admin_login_field"
+                    type={show ? 'text' : 'password'}
+                />
+                {touched && error && <span className="error_tag">{error}</span>}
             </div>
         )
     };
 
     handleClick = (e) => {
-        if(e.target.checked == true) this.setState({ show: true })
+        if(e.target.checked === true) this.setState({ show: true })
         else this.setState({ show: false })
     }
 

@@ -12,17 +12,12 @@ import SideBar from "../SideBar/SideBar";
 import { openSideBar } from "../../Actions/SideBarAction";
 
 /* Images */
-import logo from '../../Images/logo.png';
 import logoTwo from '../../Images/logoTwo.png';
 
 /* Style */
 import './navBar.css';
 
 class NavBar extends React.Component {
-
-    constructor() {
-        super();
-    };
 
     render() {
         const { openSideBar } = this.props;

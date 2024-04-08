@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import { MdOutlineChevronLeft } from "react-icons/md";
 import { MdOutlineChevronRight } from "react-icons/md";
-import { useSwiper } from "swiper/react"; 
 
 /* Actions and Helpers */
 import { projectData } from './projectHelpers';
@@ -14,7 +13,6 @@ import { projectData } from './projectHelpers';
 import './project.css';
 
 const Projects = () => {
-    const swiper = useSwiper();
     return(
         <div className="project_main_container">
             <div className='project_container'>

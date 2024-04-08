@@ -6,6 +6,11 @@
     margin-top: 25px;
 }
 
+.about_sup_label {
+    font-size: 20px;
+    vertical-align: text-top;
+}
+
 .about_row_container {
     margin-top: 70px;
     align-items: center;
@@ -193,9 +198,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* flex-wrap: wrap; */
-    /* padding: 10px; */
-    /* margin-left: -80px; */
 }
 
 .about_us_summary_images {
@@ -218,11 +220,11 @@
 
 .summary_content {
     border-left: 1px solid #d8d8d8;
-    padding: 3px;
+    padding: 5px;
 }
 
 .about_inner_count {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1em;
 }
 
@@ -259,10 +261,6 @@
         font-size: 16px;
         line-height: 1em;
     }
-
-    /* .about_us_summary_images {
-        flex-basis: 100%;
-    } */
 
     .main_about_container {
         padding: 0 16px;

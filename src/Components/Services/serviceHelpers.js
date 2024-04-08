@@ -26,5 +26,45 @@ export const serviceHelpers = [
                Rise Broadband provides products and services to meet 
                the needs of both Enterprise and Small Business.`,
         buttonData: 'get a quote'
+    },
+    {
+        id: 2,
+        headers: 'business services',
+        backGroundImage: serviceBannerTwo,
+        icon: <PiBuildings size={40} color="red"/>,
+        data: `Business-class service and support.
+               Rise Broadband provides products and services to meet 
+               the needs of both Enterprise and Small Business.`,
+        buttonData: 'get a quote'
+    },
+    {
+        id: 2,
+        headers: 'business services',
+        backGroundImage: serviceBannerTwo,
+        icon: <PiBuildings size={40} color="red"/>,
+        data: `Business-class service and support.
+               Rise Broadband provides products and services to meet 
+               the needs of both Enterprise and Small Business.`,
+        buttonData: 'get a quote'
+    },
+    {
+        id: 2,
+        headers: 'business services',
+        backGroundImage: serviceBannerTwo,
+        icon: <PiBuildings size={40} color="red"/>,
+        data: `Business-class service and support.
+               Rise Broadband provides products and services to meet 
+               the needs of both Enterprise and Small Business.`,
+        buttonData: 'get a quote'
+    },
+    {
+        id: 2,
+        headers: 'business services',
+        backGroundImage: serviceBannerTwo,
+        icon: <PiBuildings size={40} color="red"/>,
+        data: `Business-class service and support.
+               Rise Broadband provides products and services to meet 
+               the needs of both Enterprise and Small Business.`,
+        buttonData: 'get a quote'
     }
 ];

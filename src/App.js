@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 /* User Components */
 import Home from './Components/Home/Home';
@@ -15,6 +17,8 @@ import MainProject from "./Components/MainProject/MainProject";
 
 /* Admin Components */
 import SiteAdmin from "./Components/SiteAdmin/SiteAdmin";
+import AdminDashBoardIndex from "./Components/AdminDashBoard/AdminDashBoardIndex";
+import ManageAbout from "./Components/SiteAdminAbout/ManageAbout";
 
 /* Helpers and Functions */
 import store from "./Reducers";
@@ -26,6 +30,7 @@ function App() {
   return (
     <div className="App">
       <Provider store={store}>
+        <ToastContainer />
         <BrowserRouter> 
             <Routes>
               <Route path="*" Component={NotFound} />
@@ -35,7 +40,10 @@ function App() {
               <Route path="/career" Component={Career} />
               <Route path="/project" Component={MainProject} />
 
-              <Route path="/siteAdmin" Component={SiteAdmin} />
+              {/* Admin routes */}
+              <Route path="/siteAdmin/login" Component={SiteAdmin} />
+              <Route path="/siteAdmin" Component={AdminDashBoardIndex} />
+              <Route path="/siteAdmin/about" Component={ManageAbout} />
             </Routes>
           </BrowserRouter>
       </Provider>
@@ -44,3 +52,10 @@ function App() {
 }
 
 export default App;
+
+
+/* 
+axios credentials include
+with credentials true axios
+media query for dark mode
+*/

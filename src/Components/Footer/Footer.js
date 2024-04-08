@@ -20,7 +20,7 @@ class Footer extends React.Component {
             <div className="footer_container">
                 <Row className="footer_row">
                     <Col className="footer_col">
-                        <img src={logoTwo} className="footer_logo" about="logo"/>
+                        <img src={logoTwo} className="footer_logo" alt="logo" about="logo"/>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Odio qui, fugiat quas ducimus voluptas molestiae consequatur eius cupiditate? 

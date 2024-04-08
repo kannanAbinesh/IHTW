@@ -1,0 +1,119 @@
+.site_admin_about_form_container {
+    margin-bottom: 25px !important;
+    text-align: left;
+}
+
+.site_admin_about_label {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    margin: 6px 0px;
+    line-height: 1.43;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.about_error_tag {
+    color: #ff5a5f;
+}
+
+.admin_page_container {
+    margin: 10px 10px 10px 270px;
+    padding: 40px 40px;
+    text-align: left;
+    position: relative;
+    border-radius: 10px;
+}
+
+.admin_headers {
+    font-size: 24px;
+    margin: 0px 0px 15px;
+    padding-bottom: 10px;
+}
+
+.admin_headers::after {
+    display: block;
+    height: 5px;
+    background-color: #ec0b43;
+    width: 10%;
+    content: '';    
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.about_grid_row {
+    display: flex;
+    width: 100% !important;
+    flex-wrap: wrap;
+}
+
+.about_grid_row_header {
+    display: flex;
+    width: 100% !important;
+    flex-wrap: wrap;
+}
+
+.about_grid_col_header {
+    width: 33%;
+    flex-basis: 33%;
+}
+
+.site_admin_about_field {
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #dee2e6 !important;
+    line-height: 24px;
+    font-weight: normal;
+    height: 50px !important;
+}
+
+.aboutus_textarea {
+    height: 110px !important;
+}
+
+.about_grid_col_text_area {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.about_grid_col_icons {
+    width: 33%;
+    flex-basis: 33%;
+}
+
+.about_grid_col_story {
+    width: 33%;
+    flex-basis: 33%;
+}
+
+.admin_about_btn {
+    float: right;
+    margin: auto 20px;
+}
+
+.about_image_uploader_col {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .admin_page_container {
+        margin: 10px;
+        padding: 20px
+    }
+
+    .about_grid_col_header {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .about_grid_col_icons {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .about_grid_col_story {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
