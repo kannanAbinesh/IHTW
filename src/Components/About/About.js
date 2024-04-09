@@ -1,13 +1,16 @@
 /* Plugins */
 import { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Autoplay } from 'swiper/modules';
 import { SlPeople } from "react-icons/sl";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 /* Components */
 import Footer from '../Footer/Footer';
 
 /* Helpers and Actions */
 import store from '../../Reducers';
+import { projectData } from '../Projects/projectHelpers';
 import { getAbout } from '../../Actions/getAboutAction';
 
 /* Styles and Animations */
@@ -19,12 +22,11 @@ const About = () => {
 
     useEffect(() => {
         (async () => {
-            let { data } = await store.dispatch(getAbout());
+            let { data, image } = await store.dispatch(getAbout());
+            console.log(data, image)
             setData(data)
         })();
     }, []);
-
-    console.log(aboutData, 'kkkkkkkkk');
 
     let iconsData = [
         {
@@ -88,6 +90,51 @@ const About = () => {
                         </div>
                     </Row>
                 </Container>
+
+                <div className='about_row_container_image'>
+                    <Container>
+                        <Swiper
+                            pagination={{
+                                clickable: true
+                            }}
+                            breakpoints={{
+                                0: {
+                                    slidesPerView: 1,
+                                },
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 10,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20,
+                                },
+                                1025: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 10,
+                                }
+                            }}
+                            slidesPerView={2}
+                            modules={[Autoplay]}
+                            spaceBetween={30}
+                            autoplay={{
+                                delay: 4000,
+                                disableOnInteraction: false
+                            }}
+                            loop={true}
+                        >
+                            {
+                                projectData?.map((i, index) => {
+                                    return (
+                                        <SwiperSlide key={index}>
+                                            <div className='about_image' style={{backgroundImage: `url(${i?.image})`}} />
+                                        </SwiperSlide>
+                                    )
+                                })
+                            }
+                        </Swiper>
+                    </Container>
+                </div>
             </div>
             <Footer />
         </div>

@@ -14,7 +14,8 @@ const ManageAboutImage = (props) => {
 
     const handleUpload = async(files) => {
         const { uploadAboutImage } = props;
-        await uploadAboutImage(files);
+        const { id } = props;
+        await uploadAboutImage(files, id);
     }
     
     const [files, setFiles] = useState([]);
@@ -31,32 +32,18 @@ const ManageAboutImage = (props) => {
             );
         }
     });
-
-    const images = files?.map(file => (
-        <img src={file?.preview} key={file?.name} alt='about image' style={{width: '200px', height: '200px'}}/>
-    ))
-
     return (
         <div>
             <div className='about_Dropzone' {...getRootProps()}>
                 <input {...getInputProps()} />
                 <label className='about_upload_file_content'>Click here to upload file or drag them to upload</label>
             </div>
-            <div style={{display: 'grid', gridTemplateColumns: '24% 24% 24% 24%', gridGap: '15px', marginTop: '30px', marginBottom: '15px'}}>
+            <div className='about_dropzone_image_show'>
                 {
                     files?.map((files, index) => {
                         return (
-                            <div key={index} style={{position: 'relative'}}>
-                                <div style={{
-                                    backgroundImage: `url(${files.preview})`, 
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    width: '100%',
-                                    height: '100%',
-                                    paddingTop: '70%',
-                                    borderRadius: '5px',
-                                    backgroundPosition: '50% 50%'
-                                }} />
+                            <div className='about_dropzone_main_container' key={index}>
+                                <div className='about_dropzone_img_container' style={{ backgroundImage: `url(${files.preview})` }} />
                                 <div style={{position: 'absolute', right: '10px', top: '10px'}}>
                                     <div style={{position: 'relative', display: 'inline-block'}}>
                                         <div style={{width: '20px', height: '20px', borderRadius: '50%', background: 'white', cursor: 'pointer', textAlign: 'center'}} >

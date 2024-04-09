@@ -19,9 +19,18 @@ import './siteAdminAbout.css';
 
 class ManageAboutForm extends React.Component {
 
+    constructor() {
+        super();
+        this.state = {
+            imageList: []
+        }
+    }
+
     componentDidMount() { // invoked after the first render of the component.
-        // const { initialize, initialValues } = this.props;
-        // initialize(initialValues); // SiteAdminAboutLoginForm data initializiation.
+        const { initialize } = this.props;
+        const { initialValues, imageData } = this.props;
+        initialize(initialValues); // SiteAdminAboutLoginForm data initializiation.
+        this.setState({ imageList: imageData });
     };
 
     handleChange = ({input, label, type, className, meta: { touched, error }}) => {
@@ -57,6 +66,8 @@ class ManageAboutForm extends React.Component {
 
     render() {
         const { handleSubmit } = this.props;
+        const { id, handleGetData } = this.props;
+        const { imageList } = this.state;
         return (
             <div className='admin_page_container'>
                 <AdminSideBar />
@@ -162,10 +173,11 @@ class ManageAboutForm extends React.Component {
                         <Row className='about_grid_row'>
                             <Col className="about_image_uploader_col">
                                 <label className="site_admin_about_label">Upload Images</label>
-                                <ManageAboutImage />
-                            </Col>
-                            <Col  className="about_image_uploader_col">
-                                
+                                <ManageAboutImage 
+                                    id={id}
+                                    images={imageList}
+                                    handleUpdateImages={handleGetData}
+                                />
                             </Col>
                         </Row>
                         <Button className='admin_about_btn' type='submit' variant='danger'>Submit</Button>
@@ -181,9 +193,7 @@ ManageAboutForm = reduxForm({
     validate: validation
 })(ManageAboutForm)
 
-const mapState = state => ({
-    data: state
-});
+const mapState = state => ({});
 
 const mapDispatch = {};
 

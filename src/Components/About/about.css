@@ -232,6 +232,18 @@
     font-size: 16px;
     font-weight: 400;
 }
+.about_row_container_image {
+    margin-top: 30px;
+}
+
+.about_image {
+    height: 175px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+}
 
 @media screen and (max-width: 1024px) {
     .summery_icons {

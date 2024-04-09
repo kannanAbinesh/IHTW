@@ -1,6 +1,6 @@
 /* Plugins */
 import { connect } from "react-redux";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 /* Components */
 import ManageAboutForm from "./ManageAboutForm";
@@ -9,20 +9,35 @@ import ManageAboutForm from "./ManageAboutForm";
 import store from '../../Reducers'; // global redux
 import { getAbout } from "../../Actions/getAboutAction";
 
-const ManageAbout = () => {
+class ManageAbout extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            formData: {},
+            imageData: []
+        }
+    }
     
-    const [formData, setFormData] = useState({});
 
-    useEffect(() => {
-        (async () => {
-            let data = await store.dispatch(getAbout());
-            setFormData(data);
-        })();
-    }, []);
+    handleGetData = async () => {
+        let { data, image } = await store.dispatch(getAbout());
+        this.setState({formData: data});
+    }
 
-    return (
-        <ManageAboutForm initialValues={formData?.data} />
-    )
+    componentDidMount() {
+        this.handleGetData();
+    };
+
+    render() {
+        const { formData } = this.state;
+        // console.log(imageData)
+        return (
+            <ManageAboutForm 
+                initialValues={formData} 
+                id={formData?.id}
+            />
+        )
+    }
 };
 
 const mapState = () => ({});
