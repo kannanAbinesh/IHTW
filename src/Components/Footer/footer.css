@@ -70,20 +70,15 @@
     padding-top: 25px;
 }
 
-email_container a {
+.email_container a {
     text-decoration: none;
 }
 
-a span {
+.email_container a span {
     color: #fff;
     font-size: 16px;
     vertical-align: middle;
 }
-
-/* .email_icon {
-    width: 45px;
-    color: #fff;
-} */
 
 .footer_list_header {
     font-size: 20px;

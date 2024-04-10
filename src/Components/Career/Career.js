@@ -2,17 +2,21 @@
 import Lottie from 'react-lottie';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Accordion } from 'react-bootstrap';
+import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
+import { IoIosMail } from "react-icons/io";
 
 /* Components */
 import Footer from '../Footer/Footer';
 import CareerForm from '../CareerForm/CareerForm';
+
+/* Images */
+import logo from '../../Images/logoTwo.png';
 
 /* Helpers and Actions */
 import { careerHelper } from './careerHelper';
 
 /* Style */
 import './career.css';
-import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
 
 const Career = () => {
 
@@ -88,7 +92,17 @@ const Career = () => {
                 </Container>
 
                 <div id='career_form' className='career_form_container'>
-                    <CareerForm />
+                    <div className='contact_details_main_container'>
+                        <CareerForm />
+                    </div>
+                    <div className='contact_details_main_container'>
+                        <div className='contact_details_inner_main_container'>
+                            <h3 className='contact_details_mail_header'>Send your resume to</h3>
+                            <a href='mailto:Integratedhouse2001@gmail.com' className='email_contact_us_container'>
+                                <span>Integratedhouse2001@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
             </div>

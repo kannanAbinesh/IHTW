@@ -15,13 +15,13 @@ class CareerForm extends React.Component {
 
     handleChange = ({input, placeholder, type, meta: { touched, error }}) => {
         return (
-            <div className="site_admin_login_form_container">
+            <div className="contact-us-feild-container">
                 <Form>
-                    <label className="site_admin_login_label">{placeholder}</label>
+                    <label className="career_form_label">{placeholder}</label>
                     <Form.Control
                         {...input}
                         placeholder={placeholder}
-                        className="site_admin_login_field"
+                        className="contact-us-feild"
                         type={type}
                     />
                     {touched && error && <span className="error_tag">{error}</span>}

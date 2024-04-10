@@ -151,4 +151,58 @@
     max-width: 1280px;
     padding: 0 24px;
     width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.contact_details_main_container {
+    padding: 0 25px;
+}
+
+.image_container_contact_form {
+    text-align: center;
+}
+
+.image_contact_us {
+    margin-top: 35px;
+    width: auto;
+    height: 100px;
+}
+
+.contact_details_inner_main_container {
+    margin-top: 25px;
+    padding: 0 25px;
+}
+
+.email_contact_us_container {
+    text-decoration: none;
+    color: #000000;
+}
+
+.email_contact_us_container span {
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #ff5a5f !important;
+}
+
+.contact_us_email_image {
+    color: #f6413a;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 950px) {
+    .career_form_container {
+        grid-template-columns: 100%;
+    }
+
+    .image_container_contact_form, .contact_details_inner_main_container {
+        text-align: left;
+    }
+
+    .contact_details_inner_main_container {
+        padding: 0;
+    }
 }

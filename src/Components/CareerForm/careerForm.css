@@ -1,0 +1,23 @@
+.contact-us-feild-container {
+    margin-bottom: 25px !important;
+    text-align: left;
+}
+
+.career_form_label {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    margin: 6px 0px;
+    line-height: 1.43;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.contact-us-feild {
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #dee2e6 !important;
+    line-height: 24px;
+    font-weight: normal;
+    height: 50px !important;
+}

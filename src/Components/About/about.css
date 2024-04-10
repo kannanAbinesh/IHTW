@@ -243,6 +243,7 @@
     overflow: hidden;
     border-radius: 20px;
     width: 100%;
+    background-position: 50% 50%;
 }
 
 @media screen and (max-width: 1024px) {
