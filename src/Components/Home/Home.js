@@ -22,7 +22,7 @@ class Home extends React.Component {
                 <Projects />
                 <HomeBannerLottie />
                 <Footer />
-                <Link to={'/siteAdmin/about'} >hi</Link>
+                <Link to={'/siteAdmin/contactUs'} >hi</Link>
             </div>
         )
     }
