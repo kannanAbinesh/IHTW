@@ -1,0 +1,21 @@
+.project-slider-navigation-container {
+    display: flex;
+    color: #000000;
+    grid-gap: 20px;
+}
+
+.project-slider-navigator {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.project-navigator {
+    box-shadow: inset -3px -6px 16px 0px rgba(0,0,0,.1490196078), 
+                inset 9px 5px 14px 0px rgba(0,0,0,.1490196078);
+    height: 47px;
+    padding: 10px;
+    width: 47px;
+    border-radius: 50%;
+}
