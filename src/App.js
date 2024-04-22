@@ -19,6 +19,7 @@ import MainProject from "./Components/MainProject/MainProject";
 import SiteAdmin from "./Components/SiteAdmin/SiteAdmin";
 import AdminDashBoardIndex from "./Components/AdminDashBoard/AdminDashBoardIndex";
 import ManageAbout from "./Components/SiteAdminAbout/ManageAbout";
+import ManageContactUs from "./Components/ManageContactUs/ManageConatctUs";
 
 /* Helpers and Functions */
 import store from "./Reducers";
@@ -44,6 +45,7 @@ function App() {
               <Route path="/siteAdmin/login" Component={SiteAdmin} />
               <Route path="/siteAdmin" Component={AdminDashBoardIndex} />
               <Route path="/siteAdmin/about" Component={ManageAbout} />
+              <Route path="/siteAdmin/contactUs" Component={ManageContactUs} />
             </Routes>
           </BrowserRouter>
       </Provider>
