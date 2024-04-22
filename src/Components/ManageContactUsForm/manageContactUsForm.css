@@ -1,0 +1,116 @@
+.site_admin_contact_form_container {
+    margin-bottom: 25px !important;
+    text-align: left;
+}
+
+.site_admin_contact_label {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    margin: 6px 0px;
+    line-height: 1.43;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.site_admin_contact_field {
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #dee2e6 !important;
+    line-height: 24px;
+    font-weight: normal;
+    height: 50px !important;
+}
+
+.contact_grid_row_header {
+    display: flex;
+    width: 100% !important;
+    flex-wrap: wrap;
+}
+
+.contact_grid_col_header {
+    width: 33%;
+    flex-basis: 33%;
+}
+
+.contact_textarea {
+    height: 110px !important;
+}
+
+.contact_grid_row {
+    display: flex;
+    width: 100% !important;
+    flex-wrap: wrap;
+}
+
+.contact_grid_col_text_area {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.contact_error_tag {
+    color: #ff5a5f;
+}
+
+.admin_contact_btn {
+    float: right;
+    margin: auto 20px;
+}
+
+.section_header_container {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+
+}
+
+.section_add_container {
+    font-weight: 400 !important;
+    font-size: 23px !important;
+    vertical-align: middle;
+    padding: 1px 0 0 1px;
+    line-height: 1.43;
+    display: inline-block;
+    width: 40px;
+    background-color: #ec0b43;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.section_inner_container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 30px;
+    width: 100% !important;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.section_inner_col {
+    padding: 25px;
+    position: relative;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 5px;
+}
+
+.section_delete_icon {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e0d7d7;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .section_inner_container {
+        grid-template-columns: 100%;
+    }
+}
