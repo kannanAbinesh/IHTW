@@ -107,7 +107,6 @@
 }
 
 .accordian_main_list {
-    list-style-type: circle;
     padding: 0;
 }
 
@@ -198,6 +197,10 @@
 }
 
 @media screen and (max-width: 950px) {
+    .email_contact_us_container span {
+        font-size: 20px;
+    }
+
     .contact_details_main_container {
         padding: 0px;
     }
@@ -231,5 +234,15 @@
 
     .career-jobs-container {
         padding: 0px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .accordian_header {
+        padding: 0px;
+    }
+
+    .email_contact_us_container span {
+        font-size: 16px;
     }
 }
