@@ -239,7 +239,7 @@
 
 @media screen and (max-width: 426px) {
     .accordian_header {
-        padding: 0px;
+        padding: 10px 0px;
     }
 
     .email_contact_us_container span {
