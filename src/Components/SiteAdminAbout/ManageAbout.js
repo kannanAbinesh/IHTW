@@ -16,27 +16,31 @@ class ManageAbout extends React.Component {
             formData: {},
             imageData: []
         }
-    }
+    };
     
 
     handleGetData = async () => {
-        let { data, image } = await store.dispatch(getAbout());
-        this.setState({formData: data});
-    }
+        let data = await store.dispatch(getAbout());
+        this.setState({ formData: data?.data });
+        this.setState({ imageData: data?.image });
+    };
 
     componentDidMount() {
         this.handleGetData();
     };
 
     render() {
-        const { formData } = this.state;
-        // console.log(imageData)
-        return (
-            <ManageAboutForm 
-                initialValues={formData} 
-                id={formData?.id}
-            />
-        )
+        const { formData, imageData } = this.state;
+        if(formData) {
+            return (
+                <ManageAboutForm 
+                    initialValues={formData} 
+                    id={formData?.id}
+                    image={imageData}
+                    handleGetData={this.handleGetData}
+                />
+            );
+        }
     }
 };
 

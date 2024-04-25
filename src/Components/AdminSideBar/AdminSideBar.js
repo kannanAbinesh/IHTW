@@ -4,7 +4,6 @@ import { data } from './adminSideBarHelper';
 /* Style */
 import './adminSideBar.css';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 
 const AdminSideBar = () => {
 

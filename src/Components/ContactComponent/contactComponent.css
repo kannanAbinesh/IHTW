@@ -1,0 +1,88 @@
+.contacted_container_header {
+    border: 1px solid #dadada;
+    margin-top: 25px;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+    gap: 12%;
+    padding: 24px 15px;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.contacted_search_bar {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 10px 10px 30px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: 2% 50%;
+}
+
+.contacted_container_body {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 22px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.contacted_container_col {
+    position: relative;
+    /* border: 1px solid black; */
+    box-shadow: inset -3px -6px 16px 0px rgba(0,0,0,.1490196078), 
+                inset 9px 5px 14px 0px rgba(0,0,0,.1490196078);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contacted_name {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contacted_container_col:nth-child(odd) .contacted_name {
+    color: #dd0909;
+}
+
+.contacted_container_col:nth-child(even) .contacted_name {
+    color: #001cff;
+}
+
+.contacted_delete {
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    top: -8px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #dadada;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contacted_card_display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacted_value {
+    color: #959090;
+}
+
+.contacted_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacted_logo {
+    width: auto;
+    height: 50px;
+}

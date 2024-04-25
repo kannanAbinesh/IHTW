@@ -193,9 +193,22 @@
     height: 30px;
 }
 
+.careerOr {
+    display: none;
+}
+
 @media screen and (max-width: 950px) {
+    .contact_details_main_container {
+        padding: 0px;
+    }
+
+    .contact_details_mail_header {
+        font-size: 25px;
+    }
+
     .career_form_container {
         grid-template-columns: 100%;
+        padding: 0px;
     }
 
     .image_container_contact_form, .contact_details_inner_main_container {
@@ -204,5 +217,19 @@
 
     .contact_details_inner_main_container {
         padding: 0;
+    }
+
+    .careerOr {
+        margin-bottom: 25px;
+        display: block;
+        color: #ff5a5f;
+    }
+
+    .main_career_container {
+        padding: 0px;
+    }
+
+    .career-jobs-container {
+        padding: 0px;
     }
 }

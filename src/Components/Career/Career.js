@@ -1,16 +1,11 @@
 /* Plugins */
-import Lottie from 'react-lottie';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import { Accordion } from 'react-bootstrap';
 import aboutLottie from '../../Images/LottieFiles/aboutLottie.json';
-import { IoIosMail } from "react-icons/io";
 
 /* Components */
 import Footer from '../Footer/Footer';
 import CareerForm from '../CareerForm/CareerForm';
-
-/* Images */
-import logo from '../../Images/logoTwo.png';
 
 /* Helpers and Actions */
 import { careerHelper } from './careerHelper';
@@ -34,26 +29,6 @@ const Career = () => {
     return (
         <div>
             <div className="career_container">
-                <Container>
-                    <Row className='career_row_container'>
-                        <Col  lg={6} md={6} sm={12} xs={12} className='career_col'>
-                            <div className='career_header_text'>
-                                <div className='career_main_header'>
-                                    <h4 className='career_headers_content'>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        In sit distinctio dolore reprehenderit.
-                                    </h4>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col  lg={6} md={6} sm={12} xs={12} className='career_col'>
-                            <div>
-                                <Lottie options={defaultOptions} />
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-
                 <div className='main_career_container'>
                     <div className='main_career_header_container'>
                         <h2 className='main_career_header_content'>Open jobs</h2>
@@ -97,6 +72,7 @@ const Career = () => {
                     </div>
                     <div className='contact_details_main_container'>
                         <div className='contact_details_inner_main_container'>
+                            <h2 className='careerOr'>(OR)</h2>
                             <h3 className='contact_details_mail_header'>Send your resume to</h3>
                             <a href='mailto:Integratedhouse2001@gmail.com' className='email_contact_us_container'>
                                 <span>Integratedhouse2001@gmail.com</span>

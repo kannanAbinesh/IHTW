@@ -19,11 +19,12 @@ import './about.css';
 const About = () => {
 
     const [aboutData, setData] = useState({});
+    const [aboutImage, setImage] = useState([]);
 
     useEffect(() => {
         (async () => {
             let { data, image } = await store.dispatch(getAbout());
-            console.log(data, image)
+            setImage(image);
             setData(data)
         })();
     }, []);
@@ -45,7 +46,7 @@ const About = () => {
             data: aboutData?.destination
         }
     ];
-    
+
     return (
         <div>
             <div className='about_container'>
@@ -101,13 +102,13 @@ const About = () => {
                                 0: {
                                     slidesPerView: 1,
                                 },
-                                640: {
+                                425: {
                                     slidesPerView: 2,
                                     spaceBetween: 10,
                                 },
                                 768: {
                                     slidesPerView: 3,
-                                    spaceBetween: 20,
+                                    spaceBetween: 10,
                                 },
                                 1025: {
                                     slidesPerView: 4,
@@ -124,10 +125,10 @@ const About = () => {
                             loop={true}
                         >
                             {
-                                projectData?.map((i, index) => {
+                                aboutImage && aboutImage.length > 0 && aboutImage?.map((i, index) => {
                                     return (
                                         <SwiperSlide key={index}>
-                                            <div className='about_image' style={{backgroundImage: `url(${i?.image})`}} />
+                                            <div className='about_image' style={{backgroundImage: `url(http://localhost:3000/${i.name})`}} />
                                         </SwiperSlide>
                                     )
                                 })

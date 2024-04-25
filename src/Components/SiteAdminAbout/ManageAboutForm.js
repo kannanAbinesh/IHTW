@@ -3,8 +3,6 @@ import React from 'react';
 import { Button, Form, Col, Row } from "react-bootstrap";
 import { Field, reduxForm } from "redux-form";
 import { connect } from "react-redux";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 
 /* Components */
 import AdminSideBar from '../AdminSideBar/AdminSideBar';
@@ -18,20 +16,6 @@ import { validation } from './validate';
 import './siteAdminAbout.css';
 
 class ManageAboutForm extends React.Component {
-
-    constructor() {
-        super();
-        this.state = {
-            imageList: []
-        }
-    }
-
-    componentDidMount() { // invoked after the first render of the component.
-        const { initialize } = this.props;
-        const { initialValues, imageData } = this.props;
-        initialize(initialValues); // SiteAdminAboutLoginForm data initializiation.
-        this.setState({ imageList: imageData });
-    };
 
     handleChange = ({input, label, type, className, meta: { touched, error }}) => {
         return (
@@ -66,8 +50,7 @@ class ManageAboutForm extends React.Component {
 
     render() {
         const { handleSubmit } = this.props;
-        const { id, handleGetData } = this.props;
-        const { imageList } = this.state;
+        const { id, handleGetData, image } = this.props;
         return (
             <div className='admin_page_container'>
                 <AdminSideBar />
@@ -175,7 +158,7 @@ class ManageAboutForm extends React.Component {
                                 <label className="site_admin_about_label">Upload Images</label>
                                 <ManageAboutImage 
                                     id={id}
-                                    images={imageList}
+                                    images={image}
                                     handleUpdateImages={handleGetData}
                                 />
                             </Col>

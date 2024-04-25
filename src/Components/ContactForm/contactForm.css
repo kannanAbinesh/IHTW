@@ -1,0 +1,59 @@
+.contact-form-header {
+    color: #ec0b0b8a;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.contact-form-header::after {
+    margin-top: 10px;
+    display: block;
+    border-radius: 10px;
+    content: '';
+    background-color: #ec0b0b8a;
+    height: 2px;
+    width: 50px;
+}
+
+.contact-form-container {
+    margin-bottom: 25px !important;
+    text-align: left;
+}
+
+.contact-fomr-label {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    margin: 6px 0px;
+    line-height: 1.43;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.contact-form-field {
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #dee2e6 !important;
+    line-height: 24px;
+    font-weight: normal;
+    height: 50px !important;
+}
+
+.contact_check_box_container {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: 20px;
+    margin-bottom: 25px;
+}
+
+.contact-checkbox-col {
+    text-align: center;
+    box-shadow: inset -3px -6px 16px 0px rgba(0,0,0,.1490196078), 
+                inset 9px 5px 14px 0px rgba(0,0,0,.1490196078);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.contact-icon-check-box {
+    margin-bottom: 10px;
+}

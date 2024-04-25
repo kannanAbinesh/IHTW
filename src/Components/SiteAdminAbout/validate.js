@@ -1,8 +1,8 @@
 export const validation = (value) => {
     const errors = {};
 
-    if(!value?.headers) {
-        errors.headers = 'Required';
+    if(!value?.header) {
+        errors.header = 'Required';
     };
 
     if(!value?.aboutus) {
